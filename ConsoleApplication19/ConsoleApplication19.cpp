@@ -8,7 +8,7 @@ using namespace std;
 class MyStack {
 private:
     int size = -1;
-    int mus[100];
+    int m[100];
 public:
     /**
      * @brief Конструктор класса стека
@@ -19,7 +19,7 @@ public:
      * @param elem Параметр добавляемый в стек
     */
     void push(int elem) {
-        mus[size + 1] = elem;
+        m[size + 1] = elem;
         size++;
     }
     /**
@@ -27,7 +27,7 @@ public:
      * @return Значение самого верхнего элемента стека
     */
     int top() {
-        return mus[size];
+        return m[size];
     }
     /**
      * @brief Метод удаления элементов стека
@@ -49,6 +49,7 @@ public:
     int getSize() {
         return size;
     }
+
 };
 
 int main() {
